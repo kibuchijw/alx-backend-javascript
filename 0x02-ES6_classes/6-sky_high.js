@@ -1,7 +1,7 @@
 import Building from './5-building';
 
 export default class SkyHighBuilding extends Building {
-  constructor (sqft, floors) {
+  constructor(sqft, floors) {
     if (typeof floors !== 'number') throw new Error();
     super(sqft);
     this._floors = floors;
@@ -9,25 +9,25 @@ export default class SkyHighBuilding extends Building {
   }
 
   // Getter and setter for sqft attribute
-  get sqft () {
+  get sqft() {
     return this._sqft;
   }
 
-  set sqft (value) {
+  set sqft(value) {
     this._sqft = value;
   }
 
   // Getter and setter for floors attribute
-  get floors () {
+  get floors() {
     return this._floors;
   }
 
-  set floors (value) {
+  set floors(value) {
     this._floors = value;
   }
 
   // Override the evacuationWarningMessage method
-  evacuationWarningMessage () {
+  evacuationWarningMessage() {
     return `Evacuate slowly the ${this.floors} floors`;
   }
 }
