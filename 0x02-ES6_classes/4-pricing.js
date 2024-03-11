@@ -36,9 +36,8 @@ class Pricing {
   displayFullPrice() {
     if (this._currency) {
       return `${this._amount} ${this._currency.name} (${this._currency.code})`;
-    } else {
-      return `${this._amount}`;
     }
+    return `${this._amount}`;
   }
 
   // Static method to convert price
