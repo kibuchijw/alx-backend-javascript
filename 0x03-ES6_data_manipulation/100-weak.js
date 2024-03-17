@@ -1,6 +1,6 @@
 export const weakMap = new WeakMap();
 
-export function queryAPI (endpoint) {
+export function queryAPI(endpoint) {
   // Check if the endpoint has been queried before
   if (!weakMap.has(endpoint)) {
     // If not, initialize the counter to 1
